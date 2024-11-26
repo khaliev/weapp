@@ -16,15 +16,17 @@ body {
 
 .header {
   width: 100%;
+  height: 15%;
   position: fixed;
   top: 0;
   left: 0;
   padding: 20px 100px;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  box-shadow: 1px 0.3px blue;
 }
 
 .navbar a {
@@ -33,7 +35,9 @@ body {
   color: white;
   font-weight: 500;
   text-decoration: none;
+  text-shadow: 3px;
   margin-left: 40px;
+  text-shadow: 1px 1px rgb(106, 146, 239);
 }
 
 .navbar a::before {
@@ -49,4 +53,14 @@ body {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 50%;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
 }
