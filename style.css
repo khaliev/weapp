@@ -55,6 +55,176 @@ body {
   width: 100%;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(/src/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 1px 0.3px blue;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 3px;
+  margin-left: 40px;
+  text-shadow: 1px 1px rgb(106, 146, 239);
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(/src/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 1px 0.3px blue;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 3px;
+  margin-left: 40px;
+  text-shadow: 1px 1px rgb(106, 146, 239);
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  background-color: beige;
+  margin-top: 40vh;
+}
+
+.meteo {
+  width: 50vh;
+  height: 40;
+  background-color: #2d2929;
+  padding: 20px;
+}
+
+/* *** MEDIA QUERIES *** */
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 50%;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}
+
+.meteo {
+  width: 50vh;
+  height: 40;
+  background-color: #2d2929;
+  padding: 20px;
+}
+
+/* *** MEDIA QUERIES *** */
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 50%;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+}
+
+.meteo {
+  width: 50vh;
+  height: 40;
+  background-color: #2d2929;
+  padding: 20px;
+}
+
+/* *** MEDIA QUERIES *** */
+
 @media screen and (max-width: 768px) {
   .header {
     width: 50%;
